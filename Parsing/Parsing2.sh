@@ -18,7 +18,7 @@ else
 	for linha in $(cat output.log);
 	do 
 	        echo " |- $linha -| "	
-		echo "$(host $linha)"
+		host $linha
 		echo "-------------------------------------------------------------------------"
 	done
 	rm -r output.log
